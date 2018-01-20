@@ -100,11 +100,11 @@ body {
       color: #fec503; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px black;
     font-weight: bold;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: black;
+    color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif ; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
       color: #fed136; }
@@ -150,13 +150,16 @@ header.masthead {
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       font-style: italic;
+      text-shadow: 2px 2px #000000;
       line-height: 22px;
       margin-bottom: 25px;
+
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
+      text-shadow: 1px 1px #000000;
       margin-bottom: 25px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
