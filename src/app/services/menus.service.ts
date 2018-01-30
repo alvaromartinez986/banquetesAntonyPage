@@ -46,7 +46,7 @@ export class MenusService {
       description: "",
       image: "assets/img/pasta.jpg"
     },
-    {
+    {Heroes
       name : "Criolla",
       type : "",
       description: "",
@@ -56,6 +56,10 @@ export class MenusService {
   ]
 
   constructor() { }
+
+  getMenus():Menu[] {
+    return this.menus;    
+  }
 
 }
 

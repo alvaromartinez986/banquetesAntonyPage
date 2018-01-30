@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenusService, Menu } from '../../services/menus.service';
 
 @Component({
   selector: 'app-menus-div',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenusDivComponent implements OnInit {
 
-  constructor() { }
+  heroes:Heroe[] = [];
+
+  constructor(
+    private _menusService:MenusService,
+    private router:Router
+  ) { }
 
   ngOnInit() {
   }
