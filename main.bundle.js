@@ -85,6 +85,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_intro_slide_intro_slide_component__ = __webpack_require__("../../../../../src/app/components/intro-slide/intro-slide.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_service_div_service_div_component__ = __webpack_require__("../../../../../src/app/components/service-div/service-div.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_menus_div_menus_div_component__ = __webpack_require__("../../../../../src/app/components/menus-div/menus-div.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_menus_service__ = __webpack_require__("../../../../../src/app/services/menus.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -97,6 +98,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+//Services
 
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -113,7 +116,9 @@ var AppModule = /** @class */ (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */]
             ],
-            providers: [],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_7__services_menus_service__["a" /* MenusService */]
+            ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -206,7 +211,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/menus-div/menus-div.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Portfolio Grid -->\n<section class=\"bg-light\" id=\"portfolio\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-12 text-center\">\n        <h2 class=\"section-heading text-uppercase\">Menús</h2>\n        <h3 class=\"section-subheading text-muted\">Variedad de menus para sus eventos especiales</h3>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-4 col-sm-6 portfolio-item\">\n        <a class=\"portfolio-link\" data-toggle=\"modal\" href=\"#portfolioModal1\">\n          <div class=\"portfolio-hover\">\n            <div class=\"portfolio-hover-content\">\n              <i class=\"fa fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <img class=\"img-fluid\" src=\"assets/img/1Carne.jpg\" alt=\"\">\n        </a>\n        <div class=\"portfolio-caption\">\n          <h4>Gourmet</h4>\n          <p class=\"text-muted\">(1 Carne)</p>\n        </div>\n      </div>\n      <div class=\"col-md-4 col-sm-6 portfolio-item\">\n        <a class=\"portfolio-link\" data-toggle=\"modal\" href=\"#portfolioModal2\">\n          <div class=\"portfolio-hover\">\n            <div class=\"portfolio-hover-content\">\n              <i class=\"fa fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <img class=\"img-fluid\" src=\"assets/img/2Carnes.jpg\" alt=\"\">\n        </a>\n        <div class=\"portfolio-caption\">\n          <h4>Gourmet</h4>\n          <p class=\"text-muted\">(2 Carne)</p>\n        </div>\n      </div>\n      <div class=\"col-md-4 col-sm-6 portfolio-item\">\n        <a class=\"portfolio-link\" data-toggle=\"modal\" href=\"#portfolioModal3\">\n          <div class=\"portfolio-hover\">\n            <div class=\"portfolio-hover-content\">\n              <i class=\"fa fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <img class=\"img-fluid\" src=\"assets/img/asado.jpeg\" alt=\"\">\n        </a>\n        <div class=\"portfolio-caption\">\n          <h4>Asados</h4>\n        </div>\n      </div>\n      <div class=\"col-md-4 col-sm-6 portfolio-item\">\n        <a class=\"portfolio-link\" data-toggle=\"modal\" href=\"#portfolioModal4\">\n          <div class=\"portfolio-hover\">\n            <div class=\"portfolio-hover-content\">\n              <i class=\"fa fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <img class=\"img-fluid\" src=\"img/portfolio/04-thumbnail.jpg\" alt=\"\">\n        </a>\n        <div class=\"portfolio-caption\">\n          <h4>Lines</h4>\n          <p class=\"text-muted\">Branding</p>\n        </div>\n      </div>\n      <div class=\"col-md-4 col-sm-6 portfolio-item\">\n        <a class=\"portfolio-link\" data-toggle=\"modal\" href=\"#portfolioModal5\">\n          <div class=\"portfolio-hover\">\n            <div class=\"portfolio-hover-content\">\n              <i class=\"fa fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <img class=\"img-fluid\" src=\"img/portfolio/05-thumbnail.jpg\" alt=\"\">\n        </a>\n        <div class=\"portfolio-caption\">\n          <h4>Southwest</h4>\n          <p class=\"text-muted\">Website Design</p>\n        </div>\n      </div>\n      <div class=\"col-md-4 col-sm-6 portfolio-item\">\n        <a class=\"portfolio-link\" data-toggle=\"modal\" href=\"#portfolioModal6\">\n          <div class=\"portfolio-hover\">\n            <div class=\"portfolio-hover-content\">\n              <i class=\"fa fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <img class=\"img-fluid\" src=\"img/portfolio/06-thumbnail.jpg\" alt=\"\">\n        </a>\n        <div class=\"portfolio-caption\">\n          <h4>Window</h4>\n          <p class=\"text-muted\">Photography</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+module.exports = "<!-- Portfolio Grid -->\n<section class=\"bg-light\" id=\"portfolio\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-12 text-center\">\n        <h2 class=\"section-heading text-uppercase\">Menús</h2>\n        <h3 class=\"section-subheading text-muted\">Variedad de menus para sus eventos especiales</h3>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-4 col-sm-6 portfolio-item\" *ngFor=\"let menu of menus; let i = index\">\n        <a class=\"portfolio-link\" data-toggle=\"modal\" href=\"#portfolioModal1\">\n          <div class=\"portfolio-hover\">\n            <div class=\"portfolio-hover-content\">\n              <i class=\"fa fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <img class=\"img-fluid menus\" [src]=\" menu.image \" alt=\"\">\n        </a>\n        <div class=\"portfolio-caption\">\n          <h4>{{ menu.name }}</h4>\n          <p class=\"text-muted\">{{ menu.type }}</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -216,6 +221,7 @@ module.exports = "<!-- Portfolio Grid -->\n<section class=\"bg-light\" id=\"port
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenusDivComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_menus_service__ = __webpack_require__("../../../../../src/app/services/menus.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -226,10 +232,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var MenusDivComponent = /** @class */ (function () {
-    function MenusDivComponent() {
+    function MenusDivComponent(_menusService) {
+        this._menusService = _menusService;
+        this.menus = [];
     }
     MenusDivComponent.prototype.ngOnInit = function () {
+        this.menus = this._menusService.getMenus();
     };
     MenusDivComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -237,7 +247,7 @@ var MenusDivComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/components/menus-div/menus-div.component.html"),
             styles: [__webpack_require__("../../../../../src/app/components/menus-div/menus-div.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_menus_service__["a" /* MenusService */]])
     ], MenusDivComponent);
     return MenusDivComponent;
 }());
@@ -297,7 +307,6 @@ var NavbarComponent = /** @class */ (function () {
     NavbarComponent.prototype.checkScroll = function () {
         var componentPosition = this.el.nativeElement;
         var scrollPosition = window.pageYOffset;
-        console.log(componentPosition);
         if (scrollPosition >= 300) {
             this.fixed = true;
         }
@@ -381,6 +390,95 @@ var ServiceDivComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ServiceDivComponent);
     return ServiceDivComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/services/menus.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenusService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MenusService = /** @class */ (function () {
+    function MenusService() {
+        this.menus = [
+            {
+                name: "Gourmet",
+                type: "(1 Carne)",
+                description: "",
+                image: "assets/img/1Carne.jpg"
+            },
+            {
+                name: "Gourmet",
+                type: "(2 Carnes)",
+                description: "",
+                image: "assets/img/2Carnes.jpg"
+            },
+            {
+                name: "Asados",
+                type: "",
+                description: "",
+                image: "assets/img/asado.jpeg"
+            },
+            {
+                name: "Arroces",
+                type: "",
+                description: "",
+                image: "assets/img/Arroces.jpg"
+            },
+            {
+                name: "Desayunos",
+                type: "",
+                description: "",
+                image: "assets/img/1Carne.jpg"
+            },
+            {
+                name: "Refrigerios",
+                type: "",
+                description: "",
+                image: "assets/img/refrigerios.jpeg"
+            },
+            {
+                name: "Pasabocas",
+                type: "",
+                description: "",
+                image: "assets/img/pasabocas.jpg"
+            },
+            {
+                name: "Pastas",
+                type: "",
+                description: "",
+                image: "assets/img/pasta.jpg"
+            },
+            {
+                name: "Criolla",
+                type: "",
+                description: "",
+                image: "assets/img/criolla.jpeg"
+            },
+        ];
+    }
+    MenusService.prototype.getMenus = function () {
+        return this.menus;
+    };
+    MenusService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], MenusService);
+    return MenusService;
 }());
 
 
