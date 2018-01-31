@@ -18,7 +18,6 @@ export class NavbarComponent implements OnInit {
     checkScroll() {
       let componentPosition = this.el.nativeElement;
       let scrollPosition = window.pageYOffset;
-      console.log(componentPosition);
 
       if (scrollPosition >= 300) {
         this.fixed = true;

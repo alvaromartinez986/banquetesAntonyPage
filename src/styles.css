@@ -77,6 +77,14 @@ img::selection {
 img::-moz-selection {
   background: transparent; }
 
+img.menus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:250px;
+  height:250px;
+}
+
 body {
   -webkit-tap-highlight-color: #fed136; }
 

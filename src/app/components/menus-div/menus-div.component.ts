@@ -8,14 +8,14 @@ import { MenusService, Menu } from '../../services/menus.service';
 })
 export class MenusDivComponent implements OnInit {
 
-  heroes:Heroe[] = [];
+  menus:Menu[] = [];
 
   constructor(
-    private _menusService:MenusService,
-    private router:Router
+    private _menusService:MenusService
   ) { }
 
   ngOnInit() {
+   this.menus = this._menusService.getMenus();
   }
 
 }

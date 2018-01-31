@@ -8,6 +8,9 @@ import { IntroSlideComponent } from './components/intro-slide/intro-slide.compon
 import { ServiceDivComponent } from './components/service-div/service-div.component';
 import { MenusDivComponent } from './components/menus-div/menus-div.component';
 
+//Services
+import { MenusService } from './services/menus.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { MenusDivComponent } from './components/menus-div/menus-div.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    MenusService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

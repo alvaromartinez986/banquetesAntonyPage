@@ -17,10 +17,16 @@ export class MenusService {
       image: "assets/img/2Carnes.jpg"
     },
     {
+      name : "Asados",
+      type : "",
+      description: "",
+      image: "assets/img/asado.jpeg"
+    },
+    {
       name : "Arroces",
       type : "",
       description: "",
-      image: "assets/img/Arroces.jpeg"
+      image: "assets/img/Arroces.jpg"
     },
     {
       name : "Desayunos",
@@ -46,7 +52,7 @@ export class MenusService {
       description: "",
       image: "assets/img/pasta.jpg"
     },
-    {Heroes
+    {
       name : "Criolla",
       type : "",
       description: "",
@@ -58,7 +64,7 @@ export class MenusService {
   constructor() { }
 
   getMenus():Menu[] {
-    return this.menus;    
+    return this.menus;
   }
 
 }
