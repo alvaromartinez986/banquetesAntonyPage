@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -21,7 +21,8 @@ import { MenusService } from './services/menus.service';
     MenusDivComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ScrollToModule.forRoot()
   ],
   providers: [
     MenusService
