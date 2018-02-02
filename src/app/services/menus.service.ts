@@ -7,56 +7,56 @@ export class MenusService {
     {
       name : "Gourmet",
       type : "(1 Carne)",
-      description: "",
-      image: "assets/img/1Carne.jpg"
+      description: "Platos de comida gourmet con 1 carne: res, pollo o cerdo. Carne en diferentes estilos de salsa. Arroz especial. Variedad de ensaladas. Guarniciones o acompañantes.  Postre (opcional)",
+      image: "assets/img/350x250/1Carne.jpg"
     },
     {
       name : "Gourmet",
       type : "(2 Carnes)",
-      description: "",
-      image: "assets/img/2Carnes.jpg"
+      description: "Platos de comida gourmet con 2 carnes: res y pollo o cerdo y pollo. Carne en diferentes estilos de salsa. Arroz especial. Variedad de ensaladas. Guarniciones o acompañantes.  Postre (opcional)",
+      image: "assets/img/350x250/2Carnes.jpg"
     },
     {
       name : "Asados",
       type : "",
-      description: "",
-      image: "assets/img/asado.jpeg"
+      description: "Asados para ocasiones especiales. Filete de pollo, cerdo o res. Variedad de chorizos. Arepa. Papa con su salsa. Mazorca. Ensalada especial. Maduro.",
+      image: "assets/img/350x250/Asados.png"
     },
     {
       name : "Arroces",
       type : "",
-      description: "",
-      image: "assets/img/Arroces.jpg"
+      description: "Variedad de platos de arroz con ingredientes especiales. Arroz con diferentes estilos: verde, amarillo, café, rojo. Arroz campesino. Arroz con finas hierbas. Arroz con ajonjolí. Arroz con nueces. Etc.",
+      image: "assets/img/350x250/Arroces.jpg"
     },
     {
       name : "Desayunos",
       type : "",
-      description: "",
-      image: "assets/img/1Carne.jpg"
+      description: "Desayunos gourmet o tradicionales para sus reuniones especiales. Variedad de menús que incluyen: bebidas calientes, bebidas frías, frutas, huevo en diferentes estilos, acompañante, tipos de tortillas, quesos, etc.",
+      image: "assets/img/350x250/Desayunos.jpg"
     },
     {
       name : "Refrigerios",
       type : "",
       description: "",
-      image: "assets/img/refrigerios.jpeg"
+      image: "assets/img/350x250/Refrigerios.jpg"
     },
     {
       name : "Pasabocas",
       type : "",
       description: "",
-      image: "assets/img/pasabocas.jpg"
+      image: "assets/img/350x250/Pasabocas.jpg"
     },
     {
       name : "Pastas",
       type : "",
       description: "",
-      image: "assets/img/pasta.jpg"
+      image: "assets/img/350x250/Pasta.jpg"
     },
     {
       name : "Criolla",
       type : "",
       description: "",
-      image: "assets/img/criolla.jpeg"
+      image: "assets/img/350x250/Criolla.jpg"
     },
 
   ]
