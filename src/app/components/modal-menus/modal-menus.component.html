@@ -1,0 +1,29 @@
+<!-- Portfolio Modals -->
+
+<div class="portfolio-modal modal fade" id="portfolioModal{{i}}" tabindex="-1"
+role="dialog" aria-hidden="true" *ngFor="let menu of menus; let i = index">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">{{ menu.name }}</h2>
+              <p class="item-intro text-muted"> {{ menu.type }} </p>
+              <img class="img-fluid d-block mx-auto" [src]=" menu.image " alt="">
+              <p>{{ menu.description }}</p>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

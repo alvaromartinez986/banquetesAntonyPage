@@ -11,22 +11,16 @@ export class MenusService {
       image: "assets/img/350x250/1Carne.jpg"
     },
     {
-      name : "Gourmet",
-      type : "(2 Carnes)",
-      description: "Platos de comida gourmet con 2 carnes: res y pollo o cerdo y pollo. Carne en diferentes estilos de salsa. Arroz especial. Variedad de ensaladas. Guarniciones o acompañantes.  Postre (opcional)",
-      image: "assets/img/350x250/2Carnes.jpg"
-    },
-    {
       name : "Asados",
       type : "",
       description: "Asados para ocasiones especiales. Filete de pollo, cerdo o res. Variedad de chorizos. Arepa. Papa con su salsa. Mazorca. Ensalada especial. Maduro.",
       image: "assets/img/350x250/Asados.png"
     },
     {
-      name : "Arroces",
-      type : "",
-      description: "Variedad de platos de arroz con ingredientes especiales. Arroz con diferentes estilos: verde, amarillo, café, rojo. Arroz campesino. Arroz con finas hierbas. Arroz con ajonjolí. Arroz con nueces. Etc.",
-      image: "assets/img/350x250/Arroces.jpg"
+      name : "Gourmet",
+      type : "(2 Carnes)",
+      description: "Platos de comida gourmet con 2 carnes: res y pollo o cerdo y pollo. Carne en diferentes estilos de salsa. Arroz especial. Variedad de ensaladas. Guarniciones o acompañantes.  Postre (opcional)",
+      image: "assets/img/350x250/2Carnes.jpg"
     },
     {
       name : "Desayunos",
@@ -47,10 +41,10 @@ export class MenusService {
       image: "assets/img/350x250/Pasabocas.jpg"
     },
     {
-      name : "Pastas",
+      name : "Arroces",
       type : "",
-      description: "",
-      image: "assets/img/350x250/Pasta.jpg"
+      description: "Variedad de platos de arroz con ingredientes especiales. Arroz con diferentes estilos: verde, amarillo, café, rojo. Arroz campesino. Arroz con finas hierbas. Arroz con ajonjolí. Arroz con nueces. Etc.",
+      image: "assets/img/350x250/Arroces.jpg"
     },
     {
       name : "Criolla",
@@ -58,7 +52,12 @@ export class MenusService {
       description: "",
       image: "assets/img/350x250/Criolla.jpg"
     },
-
+    {
+      name : "Pastas",
+      type : "",
+      description: "",
+      image: "assets/img/350x250/Pasta.jpg"
+    },
   ]
 
   constructor() { }

@@ -10,6 +10,7 @@ import { MenusDivComponent } from './components/menus-div/menus-div.component';
 
 //Services
 import { MenusService } from './services/menus.service';
+import { ModalMenusComponent } from './components/modal-menus/modal-menus.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MenusService } from './services/menus.service';
     NavbarComponent,
     IntroSlideComponent,
     ServiceDivComponent,
-    MenusDivComponent
+    MenusDivComponent,
+    ModalMenusComponent
   ],
   imports: [
     BrowserModule,
