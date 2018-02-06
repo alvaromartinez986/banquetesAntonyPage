@@ -13,6 +13,7 @@ import { MenusService } from './services/menus.service';
 import { ResumeService } from './services/resume.service';
 import { ModalMenusComponent } from './components/modal-menus/modal-menus.component';
 import { AboutUsDivComponent } from './components/about-us-div/about-us-div.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AboutUsDivComponent } from './components/about-us-div/about-us-div.comp
     ServiceDivComponent,
     MenusDivComponent,
     ModalMenusComponent,
-    AboutUsDivComponent
+    AboutUsDivComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
