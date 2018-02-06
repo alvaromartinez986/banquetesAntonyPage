@@ -10,7 +10,9 @@ import { MenusDivComponent } from './components/menus-div/menus-div.component';
 
 //Services
 import { MenusService } from './services/menus.service';
+import { ResumeService } from './services/resume.service';
 import { ModalMenusComponent } from './components/modal-menus/modal-menus.component';
+import { AboutUsDivComponent } from './components/about-us-div/about-us-div.component';
 
 
 @NgModule({
@@ -20,14 +22,16 @@ import { ModalMenusComponent } from './components/modal-menus/modal-menus.compon
     IntroSlideComponent,
     ServiceDivComponent,
     MenusDivComponent,
-    ModalMenusComponent
+    ModalMenusComponent,
+    AboutUsDivComponent
   ],
   imports: [
     BrowserModule,
     ScrollToModule.forRoot()
   ],
   providers: [
-    MenusService
+    MenusService,
+    ResumeService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,39 @@
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Acerca de Nosotros</h2>
+        <br>
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          <li *ngFor="let content of resume; let i = index" [ngClass]="{'timeline-inverted':(i%2!=0)}">
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" [src]=" content.image " alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="subheading">{{ content.title }}</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">{{ content.description }}</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>Nuestra Calidad
+                <br>un Compromiso!
+              </h4>
+            </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
