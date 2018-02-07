@@ -1,0 +1,11 @@
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6" *ngFor="let client of clients; let i = index">
+        <a href="#">
+          <img class="img-fluid d-block mx-auto" [src]=" client.image " alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

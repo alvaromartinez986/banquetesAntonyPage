@@ -11,9 +11,11 @@ import { MenusDivComponent } from './components/menus-div/menus-div.component';
 //Services
 import { MenusService } from './services/menus.service';
 import { ResumeService } from './services/resume.service';
+import { ClientsService } from './services/clients.service';
 import { ModalMenusComponent } from './components/modal-menus/modal-menus.component';
 import { AboutUsDivComponent } from './components/about-us-div/about-us-div.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ClientsComponent } from './components/clients/clients.component';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MenusDivComponent,
     ModalMenusComponent,
     AboutUsDivComponent,
-    FooterComponent
+    FooterComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   providers: [
     MenusService,
-    ResumeService
+    ResumeService,
+    ClientsService
   ],
   bootstrap: [AppComponent]
 })
