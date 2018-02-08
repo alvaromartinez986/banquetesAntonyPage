@@ -24,21 +24,16 @@ export class ClientsService {
       url : "",
       image: "assets/img/companies/4.jpg"
     },
-    // {
-    //   name : "",
-    //   url : "",
-    //   image: "assets/img/companies/5.png"
-    // },
-    // {
-    //   name : "",
-    //   url : "",
-    //   image: "assets/img/companies/6.png"
-    // },
-    // {
-    //   name : "",
-    //   url : "",
-    //   image: "assets/img/companies/7.png"
-    // }
+    {
+      name : "",
+      url : "",
+      image: "assets/img/companies/5.png"
+    },
+    {
+      name : "",
+      url : "",
+      image: "assets/img/companies/6.png"
+    },
   ]
 
   constructor() { }
