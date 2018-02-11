@@ -8,7 +8,7 @@
         <br />
       </div>
       <div class="col-md-2 col-sm-2" *ngFor="let client of clients; let i = index">
-        <a href="#">
+        <a [href]=" client.url ">
           <img class="img-fluid d-block mx-auto logo" [src]=" client.image " alt="">
         </a>
       </div>

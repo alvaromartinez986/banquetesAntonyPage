@@ -500,23 +500,24 @@ section#contact {
 
 footer {
   padding: 25px 0;
-  text-align: center; }
+  text-align: left; }
   footer span.copyright {
-    font-size: 90%;
+    font-size: 100%;
     line-height: 40px;
     text-transform: none;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   footer ul.quicklinks {
-    font-size: 90%;
+    font-size: 100%;
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
+
 ul.social-buttons {
   margin-bottom: 0; }
   ul.social-buttons li a {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 40px;
     display: block;
     width: 40px;
@@ -527,6 +528,16 @@ ul.social-buttons {
     color: white;
     border-radius: 100%;
     outline: none;
+    text-align: center;
     background-color: #212529; }
-    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover{
       background-color: #fed136; }
+
+.foot{
+  color: #fed136;
+  font-size: 15px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.foot i{
+  color: white;
+}
