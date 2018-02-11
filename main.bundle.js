@@ -304,7 +304,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n    <!-- Footer -->\n    <footer class=\"bg-inverse\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-md-4\">\n            <span class=\"copyright\">Copyright &copy; Your Website 2017</span>\n          </div>\n          <div class=\"col-md-4\">\n            <ul class=\"list-inline social-buttons\">\n              <li class=\"list-inline-item\">\n                <a href=\"#\">\n                  <i class=\"fa fa-envelope-o\"></i>\n                </a>\n              </li>\n              <li class=\"list-inline-item\">\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook\"></i>\n                </a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"col-md-4\">\n            <ul class=\"list-inline quicklinks\">\n              <li class=\"list-inline-item\">\n                <a href=\"#\">Privacy Policy</a>\n              </li>\n              <li class=\"list-inline-item\">\n                <a href=\"#\">Terms of Use</a>\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </footer>\n"
+module.exports = "\n    <!-- Footer -->\n    <footer id=\"footer\" class=\"bg-inverse\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-md-4 foot\">\n            <ul class=\"list-inline social-buttons\">\n              <li class=\"list-inline-item\">\n                <a href=\"mailto:banquetesantony@gmail.com\">\n                  <i class=\"fa fa-envelope-o\"></i>\n                </a>\n              </li>\n              banquetesantony@gmail.com\n            </ul>\n          </div>\n          <div class=\"col-md-4 foot\">\n            <ul class=\"list-inline social-buttons\">\n              <li class=\"list-inline-item\">\n                <a href=\"#footer\">\n                  <i class=\"fa fa-whatsapp\"></i>\n                </a>\n              </li>\n                (+57) 3002475759\n            </ul>\n          </div>\n          <div class=\"col-md-4 foot\">\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"col-md-4 foot\">\n            <ul class=\"list-inline social-buttons\">\n              <li class=\"list-inline-item\">\n                <a href=\"https://www.facebook.com/banquetesantony/\" target=\"_blank\">\n                  <i class=\"fa fa-facebook\"></i>\n                </a>\n              </li>\n              <a href=\"https://www.facebook.com/banquetesantony/\" target=\"_blank\">\n                www.facebook.com/banquetesantony\n              </a>\n            </ul>\n          </div>\n          <div class=\"col-md-4 foot\">\n            <ul class=\"list-inline social-buttons\">\n              <li class=\"list-inline-item\">\n                <a href=\"#footer\" [ngx-scroll-to]=\"'footer'\">\n                  <i class=\"fa fa-phone-square\"></i>\n                </a>\n              </li>\n              (+57) 3117550993 / (+57) (2) 4329511\n            </ul>\n          </div>\n          <div class=\"col-md-4 foot\">\n            <ul class=\"list-inline quicklinks\">\n              <li class=\"list-inline-item\">\n                <a href=\"#inicio\" [ngx-scroll-to]=\"'page-top'\">Copyright &copy; Banquetes Antony 2018</a>\n              </li>\n          </ul>\n          </div>\n        </div>\n      </div>\n    </footer>\n"
 
 /***/ }),
 
@@ -699,32 +699,32 @@ var ClientsService = /** @class */ (function () {
             {
                 name: "",
                 url: "",
-                image: "assets/img/companies/1.png"
+                image: "assets/img/companies/acecolombia.png"
             },
             {
                 name: "",
                 url: "",
-                image: "assets/img/companies/2.jpg"
+                image: "assets/img/companies/Colgate_Palmolive.gif"
             },
             {
                 name: "",
                 url: "",
-                image: "assets/img/companies/3.gif"
+                image: "assets/img/companies/eventos_orion.gif"
             },
             {
                 name: "",
                 url: "",
-                image: "assets/img/companies/4.jpg"
+                image: "assets/img/companies/fanalca.jpg"
             },
             {
                 name: "",
                 url: "",
-                image: "assets/img/companies/5.png"
+                image: "assets/img/companies/la_hacienda.png"
             },
             {
                 name: "",
                 url: "",
-                image: "assets/img/companies/6.png"
+                image: "assets/img/companies/nfs.png"
             },
         ];
     }
