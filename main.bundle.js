@@ -238,7 +238,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/clients/clients.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"py-5\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-12 text-center\">\n        <h2 class=\"section-heading text-uppercase\">Algunos de nuestros clientes</h2>\n        <br />\n        <br />\n        <br />\n      </div>\n      <div class=\"col-md-2 col-sm-2\" *ngFor=\"let client of clients; let i = index\">\n        <a href=\"#\">\n          <img class=\"img-fluid d-block mx-auto logo\" [src]=\" client.image \" alt=\"\">\n        </a>\n      </div>\n    </div>\n    <br><br>\n  </div>\n</section>\n"
+module.exports = "<section class=\"py-5\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-12 text-center\">\n        <h2 class=\"section-heading text-uppercase\">Algunos de nuestros clientes</h2>\n        <br />\n        <br />\n        <br />\n      </div>\n      <div class=\"col-md-2 col-sm-2\" *ngFor=\"let client of clients; let i = index\">\n        <a [href]=\" client.url \">\n          <img class=\"img-fluid d-block mx-auto logo\" [src]=\" client.image \" alt=\"\">\n        </a>\n      </div>\n    </div>\n    <br><br>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -698,32 +698,32 @@ var ClientsService = /** @class */ (function () {
         this.clients = [
             {
                 name: "",
-                url: "",
+                url: "http://acecolombia.org/acecolombia/",
                 image: "assets/img/companies/acecolombia.png"
             },
             {
                 name: "",
-                url: "",
+                url: "http://www.colgate.com.co/es/co/oc/",
                 image: "assets/img/companies/Colgate_Palmolive.gif"
             },
             {
                 name: "",
-                url: "",
+                url: "https://www.facebook.com/eventos.orioncali/",
                 image: "assets/img/companies/eventos_orion.gif"
             },
             {
                 name: "",
-                url: "",
+                url: "http://tubosyperfilesfanalca.com/",
                 image: "assets/img/companies/fanalca.jpg"
             },
             {
                 name: "",
-                url: "",
+                url: "http://www.calieventos.com/la-hacienda.html",
                 image: "assets/img/companies/la_hacienda.png"
             },
             {
                 name: "",
-                url: "",
+                url: "http://novatecfs.com/",
                 image: "assets/img/companies/nfs.png"
             },
         ];
