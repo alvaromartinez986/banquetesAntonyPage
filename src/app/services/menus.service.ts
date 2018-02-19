@@ -31,13 +31,13 @@ export class MenusService {
     {
       name : "Refrigerios",
       type : "",
-      description: "",
+      description: "Refrigerios para eventos en la mañana o tarde. Tortillas, sandwich, frutas, jugos, panes, postres, típicos, gourmet, etc. Menús prácticos para comidas en medio de la mañana o tarde.",
       image: "assets/img/350x250/Refrigerios.jpg"
     },
     {
       name : "Pasabocas",
       type : "",
-      description: "",
+      description: "Pasabocas fríos y calientes según su gusto o tipo de reunión. Se puede combinar con el plato de comida principal. Opciones atractivas y ecónomicas para variar en sus eventos sociales.",
       image: "assets/img/350x250/Pasabocas.jpg"
     },
     {
@@ -49,13 +49,13 @@ export class MenusService {
     {
       name : "Criolla",
       type : "",
-      description: "",
+      description: "Platos típicos de diferentes regiones del país. Variedad de menús caseros y tradicionales Colombianos.",
       image: "assets/img/350x250/Criolla.jpg"
     },
     {
       name : "Pastas",
       type : "",
-      description: "",
+      description: "Platos variados con pasta corta o larga, salsas de variedad de quesos, carnes y opciones vegetarianas. También lasagna de diferentes estilos.",
       image: "assets/img/350x250/Pasta.jpg"
     },
   ]
@@ -67,7 +67,6 @@ export class MenusService {
   }
 
 }
-
 
 export interface Menu{
   name:string;

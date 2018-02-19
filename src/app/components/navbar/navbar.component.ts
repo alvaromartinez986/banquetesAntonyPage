@@ -16,15 +16,8 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
-      let componentPosition = this.el.nativeElement;
+      const componentPosition = this.el.nativeElement;
       let scrollPosition = window.pageYOffset;
-
-      if (scrollPosition >= 300) {
-        this.fixed = true;
-      } else {
-        this.fixed = false
-      }
-
+      this.fixed = scrollPosition >= 300;
     }
-
 }
