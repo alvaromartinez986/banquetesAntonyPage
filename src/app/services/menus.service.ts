@@ -65,7 +65,6 @@ export class MenusService {
   getMenus():Menu[] {
     return this.menus;
   }
-
 }
 
 export interface Menu{
