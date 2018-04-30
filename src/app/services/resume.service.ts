@@ -21,7 +21,7 @@ export class ResumeService {
     },
     {
       title : "Posicionamiento",
-      description: "Actualmente banquetes antony es una microempresa consolidada como una de las empresas de banquetes en Cali que ha trabajado con diferentes salones de eventos y clientes propios para eventos con alto número de personas. Cada día trabajamos para seguir creciendo y continuar mejorando los conocimientos gastronómicos, atención al cliente, manipulación de alimentos y administración de negocios..",
+      description: "Actualmente banquetes antony es una microempresa consolidada como una de las empresas de banquetes en Cali que ha trabajado con diferentes salones de eventos y clientes propios para eventos con alto número de personas. Cada día trabajamos para seguir creciendo y continuar mejorando los conocimientos gastronómicos, atención al cliente, manipulación de alimentos y administración de negocios.",
       image: "assets/img/about_us/1.jpg"
     }
   ]
