@@ -28,7 +28,7 @@ import { ClientsComponent } from './components/clients/clients.component';
     ModalMenusComponent,
     AboutUsDivComponent,
     FooterComponent,
-    ClientsComponent
+    ClientsComponent,
   ],
   imports: [
     BrowserModule,
