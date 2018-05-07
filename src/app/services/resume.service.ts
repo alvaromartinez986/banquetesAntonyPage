@@ -6,7 +6,7 @@ export class ResumeService {
   private resume:Resume[] = [
     {
       title : "Creación",
-      description: "Desde el año 2000 hasta el 2004 nació, se estudió, se organizó y se conformó la microempresa Banquetes Antony como idea de negocio de Rubiel Pabón. Los prmeros servicios de comidas era para eventos sociales con bajo número de personas.",
+      description: "Desde el año 2000 hasta el 2004 nació, se estudió, se organizó y se conformó la microempresa Banquetes Antony como idea de negocio de Rubiel Pabón. Los primeros servicios de comidas eran para eventos sociales con bajo número de personas.",
       image: "assets/img/about_us/4.jpg"
     },
     {
@@ -21,7 +21,7 @@ export class ResumeService {
     },
     {
       title : "Posicionamiento",
-      description: "Actualmente banquetes antony es una microempresa consolidada como una de las empresas de banquetes en Cali que ha trabajado con diferentes salones de eventos y clientes propios para eventos con alto número de personas. Cada día trabajamos para seguir creciendo y continuar mejorando los conocimientos gastronómicos, atención al cliente, manipulación de alimentos y administración de negocios.",
+      description: "Actualmente Banquetes Antony es una microempresa consolidada como una de las empresas de banquetes en Cali, que ha trabajado con diferentes salones de eventos y clientes propios para eventos con alto número de personas. Cada día trabajamos para seguir creciendo y continuar mejorando los conocimientos gastronómicos, atención al cliente, manipulación de alimentos y administración de negocios.",
       image: "assets/img/about_us/1.jpg"
     }
   ]
