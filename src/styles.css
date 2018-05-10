@@ -29,7 +29,7 @@ h6 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 section {
-  padding: 100px 0; }
+  padding: 40px 0; }
   section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -44,7 +44,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 40px 0; } }
 
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -133,21 +133,27 @@ body {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent; }
-    #mainNav .navbar-brand {
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
-      transition: all 0.3s; }
-    #mainNav .navbar-nav .nav-item .nav-link {
-      padding: 1.1em 1em !important; }
-    #mainNav.navbar-shrink {
-      padding-top: 0;
-      padding-bottom: 0;
-      background-color: #212529; }
-      #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.25em;
-        padding: 12px 0; } }
+      transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+    }
+  }
 
 header.masthead {
   text-align: center;
@@ -159,10 +165,13 @@ header.masthead {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+ }
   header.masthead .intro-text {
     padding-top: 150px;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    margin-bottom: 75px;
+ }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -182,7 +191,9 @@ header.masthead {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-bottom: 200px;
+    margin-bottom: 75px;
+}
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       font-style: italic;
@@ -514,6 +525,23 @@ footer {
     text-transform: none;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
+.foot i {
+  width: 35px;
+  color: white;
+  background-color: #212529;
+  border-radius: 100px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.foot a:hover i {
+  background-color: #fed136;
+}
+
+#footer .row{
+  margin-bottom: 10px
+}
+
 
 ul.social-buttons {
   margin-bottom: 0; }
@@ -541,4 +569,61 @@ ul.social-buttons {
 }
 .foot i{
   color: white;
+}
+
+
+@media (max-width: 600px) {
+  #mainNav .container {
+    margin-left: 0;
+  }
+  #mainNav .navbar-toggler {
+    right: -80%;
+  }
+
+  .portfolio-modal .close-modal .lr .rl,
+  .portfolio-modal .close-modal .lr {
+    height: 35px
+  }
+
+  .portfolio-modal .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 29px;
+    width: 35px;
+    height: 35px;
+    z-index: 9999;
+  }
+
+  .portfolio-modal .modal-content h2 {
+    font-size: 2em;
+    text-align: left;
+    padding-right: 10px
+  }
+
+  .portfolio-modal .modal-content {
+    padding: 0 0;
+    text-align: left;
+  }
+
+  .foot {
+    text-align: center;
+    margin-bottom: 17px
+  }
+
+  .foot i{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .foot span{
+    display: block;
+  }
+  .d-xs-none {
+    display: none;
+  }
+
+  .copyright{
+    margin-top: 17px
+  }
+
 }
