@@ -575,9 +575,11 @@ ul.social-buttons {
 @media (max-width: 600px) {
   #mainNav .container {
     margin-left: 0;
+    width: 100%;
   }
   #mainNav .navbar-toggler {
-    right: -80%;
+    right: 0;
+    top: 0;
   }
 
   .portfolio-modal .close-modal .lr .rl,
